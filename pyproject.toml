@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vivekrivas-kvcache_jd263"
+version = "0.1.0"
+description = "抽取数值做分布分析，用中位数绝对偏差识别KV Cache 与显存优化工程师·成本与吞吐的帕累托边界上的离群点"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "vivekrivas" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://vivekrivas.github.io"
+Repository = "https://github.com/vivekrivas/kvcache_jd263"
+Issues = "https://github.com/vivekrivas/kvcache_jd263/issues"
+
+[project.scripts]
+kvcache_jd263 = "kvcache_jd263:main"
+
+[tool.setuptools]
+py-modules = ["kvcache_jd263"]
